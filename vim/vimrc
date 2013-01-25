@@ -13,6 +13,8 @@ set noerrorbells
 set smarttab
 set visualbell
 set t_vb=
+set laststatus=2
+set ruler
 :syntax on
 filetype plugin indent on
 
