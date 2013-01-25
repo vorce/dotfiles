@@ -33,5 +33,5 @@ endif
 syntax enable
 set background=dark
 colorscheme solarized
-set guifont=Inconsolata:h14
+set guifont=Inconsolata:h16
 
