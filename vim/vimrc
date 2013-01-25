@@ -1,0 +1,35 @@
+"set softtabstop=2
+"
+call pathogen#infect()
+
+set expandtab
+set textwidth=80
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set number
+set noerrorbells
+set smarttab
+set visualbell
+set t_vb=
+:syntax on
+filetype plugin indent on
+
+"if !exists("autocommands_loaded")
+"  let autocommands_loaded = 1
+"  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
+"endif
+
+" This beauty remembers where you were the last time you edited the file, and returns to the same position.
+"au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+    "
+if has("gui_running")
+    set lines=60 columns=80
+endif
+
+syntax enable
+set background=dark
+colorscheme solarized
+set guifont=Inconsolata:h14
+
