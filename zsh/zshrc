@@ -34,9 +34,9 @@ plugins=(git osx python mvn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/joel/Library/android-sdk-mac_86/tolls:/Library/Frameworks/Python.framework/Versions/2.6/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin/:/Users/joel/Documents/src/elixir_v0.7.2/bin
+export PATH=/Users/joel/Library/android-sdk-mac_86/tolls:/Library/Frameworks/Python.framework/Versions/2.6/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin/:/Users/joel/Documents/src/elixir_v0.7.2/bin:/usr/local/git/bin
 
 alias pylint="pylint --reports=n --include-ids=y --disable=W0402 --const-rgx='[a-z_][a-z0-9_]{1,30}$'"
-alias ls="ls -FG"
+alias ls="ls -FGa"
 
 export CLICOLOR=1
