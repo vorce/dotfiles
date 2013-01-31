@@ -40,3 +40,4 @@ alias pylint="pylint --reports=n --include-ids=y --disable=W0402 --const-rgx='[a
 alias ls="ls -FGa"
 
 export CLICOLOR=1
+export GIT_EDITOR=vim
