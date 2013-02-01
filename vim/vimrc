@@ -17,6 +17,9 @@ set laststatus=2
 set ruler
 :syntax on
 
+" don't auto wrap lines
+set wrap linebreak textwidth=0
+
 "filetype plugin indent on
 
 if has("gui_running")
