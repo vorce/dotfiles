@@ -39,6 +39,7 @@ export PATH=/Users/joel/Library/android-sdk-mac_86/tolls:/Library/Frameworks/Pyt
 alias pylint="pylint --reports=n --include-ids=y --disable=W0402 --const-rgx='[a-z_][a-z0-9_]{1,30}$'"
 alias ls="ls -FGa"
 alias grep="grep -n"
+alias gvim="open"
 
 export CLICOLOR=1
 export GIT_EDITOR=vim
