@@ -31,3 +31,10 @@ colorscheme solarized
 set guifont=Inconsolata:h17
 
 let g:indent_guides_enable_on_vim_startup = 1
+
+" Use nose as default 'compiler', this is for
+" vim-makegreen be able to check errors for python
+" unit tests
+" see: http://blog.staz.be/?post/2010/09/04/Python-unit-test-and-vim
+autocmd BufNewFile,BufRead *.py compiler nose
+
