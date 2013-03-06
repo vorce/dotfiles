@@ -23,5 +23,5 @@ PROMPT='%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}%m%{$reset_color%} 
 $(virtualenv_info)$(repo_char) '
 
 # Display the date.  (My desktop at work uses $(date -u ...) instead, because I use UTC a lot at work.
-RPROMPT='$(date -u +"%Y-%m-%d %H:%M:%S")'
+RPROMPT='$(date -v +1H -u +"%Y-%m-%d %H:%M:%S")'
 
