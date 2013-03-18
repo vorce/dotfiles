@@ -1,0 +1,44 @@
+" set leader to ,
+let mapleader=","
+
+call pathogen#infect()
+
+set expandtab
+set textwidth=80
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set number
+set noerrorbells
+set smarttab
+set visualbell
+set t_vb=
+set laststatus=2
+set ruler
+:syntax on
+
+" don't auto wrap lines
+set wrap linebreak textwidth=0
+
+"filetype plugin indent on
+
+if has("gui_running")
+    set lines=60 columns=80
+endif
+
+set background=dark
+colorscheme solarized
+set guifont=Inconsolata\ Medium\ 13
+
+let g:indent_guides_enable_on_vim_startup = 1
+
+" Use nose as default 'compiler', this is for
+" vim-makegreen be able to check errors for python
+" unit tests
+" see: http://blog.staz.be/?post/2010/09/04/Python-unit-test-and-vim
+autocmd BufNewFile,BufRead *.py compiler nose
+
+" run make green with ,t
+"nmap <Leader>t <Plug>MakeGreen
+"nnoremap <Leader>t :call MakeGreen()<CR>
