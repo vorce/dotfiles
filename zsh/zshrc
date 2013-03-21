@@ -40,6 +40,7 @@ alias pylint="pylint --reports=n --include-ids=y --disable=W0402 --const-rgx='[a
 alias ls="ls -FGa"
 alias grep="grep -n"
 alias gvim="open"
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 export CLICOLOR=1
 export GIT_EDITOR=vim
