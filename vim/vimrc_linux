@@ -2,6 +2,7 @@
 let mapleader=","
 
 call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
 
 set expandtab
 set textwidth=80
@@ -42,3 +43,10 @@ autocmd BufNewFile,BufRead *.py compiler nose
 " run make green with ,t
 "nmap <Leader>t <Plug>MakeGreen
 "nnoremap <Leader>t :call MakeGreen()<CR>
+
+" rainbow parenthesis
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+

@@ -4,7 +4,7 @@
 # Determine what character to use in place of the '$' for my prompt.
 function repo_char {
     git branch >/dev/null 2>/dev/null && echo '☿' && return
-    echo '○'
+    echo 'λ'
 }
 
 # Display any virtual env stuff with python.
