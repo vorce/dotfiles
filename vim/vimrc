@@ -42,3 +42,6 @@ autocmd BufNewFile,BufRead *.py compiler nose
 " run make green with ,t
 nmap <Leader>t <Plug>MakeGreen
 "nnoremap <Leader>t :call MakeGreen()<CR>
+
+" For git, do not write lines longer than 72 chars
+autocmd Filetype gitcommit setlocal spell textwidth=72
