@@ -48,4 +48,5 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 export CLICOLOR=1
 export GIT_EDITOR=vim
 export JAVA_HOME=$(/usr/libexec/java_home)
+export PYTHONPATH=/lib/python2.7/site-packages/
 
