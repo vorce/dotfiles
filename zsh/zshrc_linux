@@ -34,7 +34,7 @@ plugins=(git osx python mvn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin/:~/elixir/bin:/usr/local/git/bin:~/Documents/src/rabbitmq_server-3.0.2/sbin:~/bin
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin/:~/elixir/bin:/usr/local/git/bin:~/Documents/src/rabbitmq_server-3.0.2/sbin:~/bin:~/code/android/adt-bundle-linux-x86_64-20131030/sdk/tools:~/code/android/adt-bundle-linux-x86_64-20131030/sdk/platform-tools
 
 alias pylint="pylint --reports=n --include-ids=y --disable=W0402 --const-rgx='[a-z_][a-z0-9_]{1,30}$'"
 alias ls="ls -FGa --color=always"
