@@ -50,4 +50,4 @@ export GIT_EDITOR=vim
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PYTHONPATH=/lib/python2.7/site-packages/
 export ANDROID_HOME=/Users/joel.carlbark/.rvm/opt/android-sdk
-
+export M2_HOME=/Users/joel.carlbark/.rvm/opt/maven/libexec/
