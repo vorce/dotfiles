@@ -46,10 +46,10 @@ alias gvim="open"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias g="git"
 alias gitlab="ssh -L 8081:gitlab.meltwater.com:80 mag-lab30 -N"
+alias gupd="g p && g fetch -p && g branch -r && g tree | head -n 4"
 
 export CLICOLOR=1
 export GIT_EDITOR=vim
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PYTHONPATH=/lib/python2.7/site-packages/
 export ANDROID_HOME=/Users/joel.carlbark/.rvm/opt/android-sdk
-export M2_HOME=/Users/joel.carlbark/.rvm/opt/maven/libexec/
