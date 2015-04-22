@@ -47,9 +47,11 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias g="git"
 alias gitlab="ssh -L 8081:gitlab.meltwater.com:80 mag-lab30 -N"
 alias gupd="g p && g fetch -p && g branch -r && g tree | head -n 4"
+alias b2d="export DOCKER_HOST=tcp://192.168.59.103:2376 && export DOCKER_TLS_VERIFY=1 && export DOCKER_CERT_PATH=/Users/joel.carlbark/.boot2docker/certs/boot2docker-vm"
 
 export CLICOLOR=1
 export GIT_EDITOR=vim
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PYTHONPATH=/lib/python2.7/site-packages/
 export ANDROID_HOME=/Users/joel.carlbark/.rvm/opt/android-sdk
+
