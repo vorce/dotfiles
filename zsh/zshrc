@@ -55,3 +55,4 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export PYTHONPATH=/lib/python2.7/site-packages/
 export ANDROID_HOME=/Users/joel.carlbark/.rvm/opt/android-sdk
 
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
