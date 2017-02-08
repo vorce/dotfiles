@@ -1,0 +1,24 @@
+[user]
+	name = Joel Carlbark
+	email = joel.carlbark@meltwater.com
+[push]
+	default = current
+[core]
+	excludesfile = /Users/joel.carlbark/.gitignore_global
+	autocrlf = input
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[branch]
+	autosetuprebase = always
+
+[alias]
+    tree = log --graph --pretty=format:'%C(yellow bold dim)%h%Creset%C(blue)%d%Creset %C(white)%s%C(reset) (by %C(green dim)%an %C(red dim)%ar%C(reset))%Creset' --all
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    co = checkout
+    cp = cherry-pick
+    p = pull
+    st = status
+    df = diff
+    b = branch
+    r = reset
+[color]
+	ui = true
