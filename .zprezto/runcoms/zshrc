@@ -1,0 +1,36 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+
+# Load pure prompt: https://github.com/sindresorhus/pure
+autoload -U promptinit; promptinit
+prompt pure
+
+# aliases
+alias ls="ls -FGa"
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias g="git"
+alias gupd="g p && g fetch -p && g branch -r && g tree | head -n 4"
+
+# env vars
+export CLICOLOR=1
+export GIT_EDITOR=vim
+
+# ruby environment
+eval "$(rbenv init -)"
+
+# do not correct commands
+unsetopt correct_all
+
+# Enable syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

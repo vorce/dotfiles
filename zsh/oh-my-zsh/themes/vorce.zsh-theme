@@ -1,1 +1,0 @@
-../../../vorce.zsh-theme
