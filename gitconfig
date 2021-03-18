@@ -20,5 +20,7 @@
     df = diff
     b = branch
     r = reset
+    code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
+    stats = "shortlog -s -n --all --no-merges"
 [color]
 	ui = true
