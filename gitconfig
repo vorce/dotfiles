@@ -1,12 +1,13 @@
 [user]
-	name = Joel Carlbark
-	email = joel.carlbark@meltwater.com
+	name = Joel C
+	email = joel@vorce.se
 [push]
 	default = current
 [core]
-	excludesfile = /Users/joel.carlbark/.gitignore_global
+	excludesfile = /Users/joel/.gitignore
 	autocrlf = input
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	editor = vim
 [branch]
 	autosetuprebase = always
 
